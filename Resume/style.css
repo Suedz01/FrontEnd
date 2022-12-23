@@ -1,0 +1,49 @@
+* {
+box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column1 {
+float: left;
+width: 70%;
+padding: 70px;
+background-color:white;
+}
+
+/* Create two equal columns that floats next to each other */
+.column2 {
+float: left;
+width: 30%;
+padding: 35px;
+background-color:black;
+}
+
+/* Clear floats after the columns */
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+.profile {
+    width: 200px;
+    height: 180px;
+    border-radius: 100%;
+    border-color: white;
+    border-style: solid;
+    border-width: 3px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.name{
+    text-align: center;
+    color:white;
+}
+
+.tagline{
+    text-align: left;
+    color:white;
+
+}
