@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Tags e Divs</title>
+  </head>
+  <body>
+    <!--
+      Cabeçalho: header
+        utiliza-se nav - para itens de navegações de paginas
+      Miolo/Conteúdo:
+        main: contem article e aside
+        article: dividos em seções
+        aside: sidebar
+      Rodapé: footer
+        utiliza-se nav - para itens de navegações de paginas
+        tag de paragrafos/links/imagens
+    -->
+    <h1>Treinando Tags e Divs</h1>
+
+    <!--Tags Estruturais-->
+    <header>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>Sobre</li>
+          <li>Contatos</li>
+          <li>Portfólio</li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <article>
+        <section>
+          <h3>Subtítulo 1</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim error, eius tempora aperiam exercitationem maiores sunt eaque vel quod nobis doloribus veritatis reiciendis labore. Officia vitae repellendus exercitationem reiciendis. Officia itaque atque quisquam rerum fugit?</p>
+        </section>
+        <section>
+          <h3>Subtítulo 2</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim error, eius tempora aperiam exercitationem maiores sunt eaque vel quod nobis doloribus veritatis reiciendis labore. Officia vitae repellendus exercitationem reiciendis. Officia itaque atque quisquam rerum fugit?</p>
+        </section>
+      </article>
+
+      <aside>
+        <!--Nav com links em lista não ordenada-->
+        <div id="asidePrimeiro" class="aside">
+          <nav>
+            <ul>
+              <li>
+                <a href="www.facebook.com">Facebook</a>
+              </li>
+              <li>
+                <a href="www.twitter.com">Twitter</a>
+              </li>
+              <li>
+                <a href="www.instagram.com">Instagram</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!--Outra forma de representar os links-->
+        <div id="asideSegundo" class="aside">
+          <nav>
+            <a href="www.facebook.com">Facebook</a><br>
+            <a href="www.twitter.com">Twitter</a><br>
+            <a href="www.instagram.com">Instagram</a><br>
+          </nav>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <ul>
+        <li>Home</li>
+        <li>Sobre</li>
+        <li>Contatos</li>
+        <li>Portfólio</li>
+      </ul>
+      <p>Desenvolvido por Alexandre Sued</p>
+    </footer>
+
+    <!--a partir do momento que começar a manipulação com CSS, obtem-se uma melhor
+        visualização da page-->
+    <!--Divs são usadas para conteúdos genéricos em que foge a sintaxe.
+        Alerta-se que pode usar id e classes!-->
+
+  </body>
+</html>

@@ -24,6 +24,24 @@
         <input id=senha type="password" required>
       </label><br>
 
+      <!--
+        Por último, inputs "selected"
+        Ele funciona através das linhas de options,
+              e uma opção sempre começa como "selected"
+        Aproveite o Label para colocar um texto antes
+              do campo da caixa de seleção
+      -->
+
+      <label>Acesso como: 
+        <select>
+          <option value="..." selected>...</option>
+          <option value="Aluno">Aluno</option>
+          <option value="Professor">Professor</option>
+          <option value="Administrador">Administrador</option>
+          <option value="Parceiro">Parceiro</option>
+        </select>
+      </label>
+
       <button>Logar</button>
       <p>Ainda não possui cadastro?</p>
       <a href="#">Clique Aqui</a>
