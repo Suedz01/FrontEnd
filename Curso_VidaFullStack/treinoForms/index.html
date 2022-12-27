@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Projeto de Forms</title>
+  </head>
+  <body>
+    <!--
+      Linhas de Label precisam referencia uma id com o atributo "for"
+      Linhas de Label intercaladas de um item ajudam a redirecionar o clique
+      Linhas de input possuem tipos que podem ser explorados pelo atributo "type"
+      Inputs de opções precisam ser nomeadas com o atributo "name",
+            assim elas são vistas como um grupo.
+      Atributo value ajuda na atribuição de valor à opção
+            podendo assim ser retornada.
+    -->
+    <h1>Base da Tela de Login</h1>
+    <form>
+      <label for="email">Email
+        <input id="email" type="email">
+      </label><br>
+    
+      <label for="senha">Senha
+        <input id=senha type="password" required>
+      </label><br>
+
+      <button>Logar</button>
+      <p>Ainda não possui cadastro?</p>
+      <a href="#">Clique Aqui</a>
+    </form>
+
+  </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+  </head>
+  <body>
+
+    <!--Brincando com Forms-->
+    <form> <!--Formato de envio-->
+      <!--o For referencia o id único da página-->
+      <label for="name">Nome <!--Título, caso alguém clicar será redirecionado para o campo especificado pelo for-->
+        <input type="text" id="name" />
+      </label>
+
+      <label for="email">Email
+        <input type="email" id="email" required/> <!--Required força o usuário a preencher o campo-->
+      </label>
+
+      <button>Enviar Formulário</button>
+    </form>
+
+
+    <form><!--Radio e Checkboxes-->
+      <div>
+        <label for="nome">Meu nome é
+          <input type="text" id="nome" required />
+        </label>
+      </div>
+      
+      <div>
+        <label> <!--Name ajuda a identificar o grupo, e a serem reconhecidos como um-->
+          <input type="radio" name="preco" value="1"> Opção 1
+        </label>
+
+        <label>
+          <input type="radio" name="preco" value="2"> Opção 2
+        </label>
+
+        <label>
+          <input type="radio" name="preco" value="3"> Opção 3
+        </label>
+
+        <label>
+          <input type="radio" name="preco" value="4"> Opção 4
+        </label>
+      </div>
+
+
+      <div>
+        <input type="checkbox" name="options" value="1"> Opção 1
+        <input type="checkbox" name="options" value="2"> Opção 2
+        <input type="checkbox" name="options" value="3"> Opção 3
+        <input type="checkbox" name="options" value="4"> Opção 4
+      </div>
+
+      <button>Enviar Formulário</button>
+    </form>
+
+
+    <form><!--Select-->
+      <!--caixinha de select são nomeadas com label e possuem options-->
+      <!--selected determinar qual está marcada inicialmente-->
+      <!--importante lembrar de preencher o value correspondente de cada uma-->
+      <!--Value serão os valores a serem enviados do formulário, por isso, PREENCHA!-->
+      <label>Escolha o seu sabor:<br>
+        <select required>
+          <option value="" selected>Selecione</option>
+          <option value="Baunilha">Baunilha</option>
+          <option value="Hortela">Hortelã</option>
+          <option value="Menta">Menta</option>
+        </select>
+      </label>
+
+      <label>Deixe um feedback:<br>
+        <textarea required></textarea>
+      </label>
+
+      <button>Mande o formulário</button>
+    </form>
+
+
+  </body>
+</html>
