@@ -4,14 +4,54 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <title>Seletores</title>
+
+    <style>
+      p{
+        padding:10px;
+        margin: 0 auto;
+        width:fit-content;
+        color:blue;
+      }
+      .Titulo{
+        color:red;
+      }
+      #Titulo_3{
+        color: chartreuse;
+      }
+      #Titulo_4{
+        color:yellow;
+      }
+    </style>
   </head>
   <body>
     <!--Seletores: Ids, Tags e Classes-->
+
     <!--
       Para se referir no CSS à:
         tags:        nome-da-tag
         ids:         #nome-do-id
         classes:     .nome-da-classe
     -->
+
+    <!--Quanto a especificidades, pense em um número binário:
+    0.0.0.0
+    Onde da direita para a esquerda, denota-se a importância:
+    inline.ids.classes.tags-->
+    <h1>Treinando Seletores e Especificidades</h1>
+    
+
+    <!--0.0.0.1-->
+    <p>Título 1</p>
+
+    <!--0.0.1.1-->
+    <p class="Titulo">Título 2</p>
+
+    <!--0.1.1.1-->
+    <p class="Titulo" id="Titulo_3">Título 3</p>
+
+    <!--1.1.1.1-->
+    <p class="Titulo" id="Titulo_4" style="color:aqua">Título 4</p>
+
+
   </body>
 </html>
