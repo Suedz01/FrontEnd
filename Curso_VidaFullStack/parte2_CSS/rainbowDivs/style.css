@@ -1,0 +1,43 @@
+.cores0{
+  text-align: center;
+  color: white;
+}
+#cor01{
+  background:red;
+  padding: 5%;
+  border-radius: 20px 20px 0px 0px ;
+}
+#cor02{
+  background:orange;
+  padding: 5%;
+  margin-top: -3%;
+}
+#cor03{
+  background:yellow;
+  padding: 5%;
+  margin-top: -3%;
+}
+#cor04{
+  background:green;
+  padding: 5%;
+  margin-top: -3%;
+
+}
+#cor05{
+  background:blue;
+  padding: 5%;
+  margin-top: -3%;
+
+}
+#cor06{
+  background:indigo;
+  padding: 5%;
+  margin-top: -3%;
+
+}
+#cor07{
+  background:purple;
+  padding: 5%;
+  margin-top: -3%;
+  border-radius: 0px 0px 20px 20px ;
+}
