@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <title>Posicionamento, Border-radius, Background e Gradientes</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+      *{
+        font-family: 'Roboto', sans-serif;
+        margin:0;
+        padding:0;
+      }
+      /* HEADER */
+      header{
+        /* settings */
+        height:100px;
+        display:flex;
+        top:0;
+        justify-content: space-between;
+        transition: 0.5s;
+        /* colors */
+        box-shadow: 0 0 1rem black;
+        background: black;
+        color:white;
+      }
+      header:hover{
+        box-shadow:0 0 0;
+      }
+      h1{
+        font-size:60px;
+        color: white;
+        z-index: 1;
+      }
+      .itens{
+        display: flex;
+        list-style-type: none;
+        margin: 40px;
+        padding-right: 100px;
+      }
+      .header_itens{
+        padding-left:80px;
+        font-size:20px;
+      }
+      #icone{
+        /* settings */
+        margin: 20px 0px 0px 100px;
+        height: 60px;
+        width:60px;
+        border-radius: 100%;
+        /* colors */
+        background: blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+      <!-- ANOTAÇÃO
+      Positions:
+        static - divisória estáticas em padrão navegador
+        relative: o elemento fica relativo ao elemento pai
+        absolute: o elemento foge da hierarquia e se reponsabiliza por toda html
+              você pode limitar isso se deixar o absolute dentre de outra div
+        fixed: o elemento fica ancorado em um ponto da página
+    -->
+    <!--
+      Border-Radius:
+        colocar no elemento que quer a transição:
+          elemento{
+            transition: all tempo_sugerido
+          }
+        criar outro ponto no css:
+          elemento:hover{
+            ação: xx;
+          }
+    -->
+    <!--
+      Background:
+        elemento{
+          background: cor;
+            ou
+          background: url();
+          no-repeat;
+          bottom center;
+          top center;
+          left bottom;
+          background-size:
+            cover: tudo atrás do layout/ container
+            você também pode definir o tamanho
+          você pode adicionar cores, além da imagem, com o:
+            background-color: cor;
+          para colocar imagens dos seus arquivos:
+            em "url" faça o seguinte:
+              url("./endereco/nome.jpg")
+        }
+    -->
+    <!--
+      Background gradiente:
+      elemento{
+        background-image: linear-gradiente(to right, cores,cores);
+        brackground-size: determinar tamanho das faixas;
+      }
+      Ler mais a documentação!
+    -->
+    <!--
+      Fontes:
+        Font-family: nome de fontes disponíveis
+        Font-size: tamanho e medida;
+      Você pode definir o tamanho das fontes individuais de cada elemento
+      Caso especifico, em uma situação de nao haver a fonte instalada:
+        font-family: Georgia, "Times new Roman", Times, serif;
+        font-weight: espessura da linha
+      atent-se que talvez seja melhor dar bol por HTML
+        font-style: normal, obliqua, italico, etc.
+      Como retirar o espaçamento:
+        margin: 0;
+      Como tirar as entre-linhas:
+        line-height: tamanho das entre-linhas;
+      Google Fonts é muito boa para puxar novas fontes para o seu trabalho:
+        Após definir a fonte desejada:
+        <link href="link_da_fonte" rel="stylesheet"> no elemento head;
+    -->
+    <!--
+      Textos:
+        text-decoration: pode tirar underlines ou coloca-los;
+        text-transformation: capitalize || deixa sempre a primeira letra maiuscula
+        letter-spacing: distancia de letras;
+      Sombras:
+        text-shadow: eixo_x_distancia eixo_y_distancia blur cor"pode ser por rgba para ter opacidade" rgba();
+        box-shadow: mesmas variaveis que text-shadow, só que para divs
+    -->
+    <header>
+          <div id="icone"></div>
+          <nav>
+            <ul class="itens">
+              <li class="header_itens"><a>Home</a></li>
+              <li class="header_itens"><a>Quem Somos</a></li>
+              <li class="header_itens"><a>Contatos</a></li>
+              <li class="header_itens"><a>Nossos Produtos</a></li>
+            </ul>
+          </nav>
+    </header>
+
+  </body>
+</html>
