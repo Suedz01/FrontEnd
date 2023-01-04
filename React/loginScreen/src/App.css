@@ -1,0 +1,111 @@
+*{
+  width:100%;
+  background: #212121;
+}
+
+/* CARD PROPERTIES */
+.card {
+/* CENTERED */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+/* LAYOUT */
+  width: 400px;
+  height: 400px;
+  background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+  border-radius: 20px;
+  transition: all .3s;
+}
+.card2 {
+  padding:50px;
+  width: 300px;
+  height: 300px;
+  background-color: #1a1a1a;
+  border-radius:15px;
+  transition: all .2s;
+}
+.card2:hover {
+  transform: scale(0.98);
+  border-radius: 20px;
+}
+.card:hover {
+  box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+}
+
+/* INPUTS */
+body {font-family: Arial, Helvetica, sans-serif;}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 15px;
+  background: #1a1a1a;
+  margin-bottom: 10%;
+  color: rgb(190, 190, 190);
+}
+label{
+  background: #1a1a1a;
+  color: rgb(230, 230, 230);
+}
+
+button {
+  background: #09a954;
+  color: white;
+  border-radius: 15px;
+  padding: 10px 10px;
+  margin: 0px 0px 20px 25%;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  width: 50%;
+  transition: .5s;
+  margin-top:5%;
+}
+p{
+  background:#1a1a1a;
+  color: white;
+}
+a{
+  background:#1a1a1a;
+  color: #3700ff;
+  text-decoration: none;
+}
+button:hover {
+  opacity: 0.8;
+  background: #3700ff;
+}
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+.container {
+  background:#1a1a1a;
+}
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+#forgot{
+  margin-top: 1%;
+  text-align: center;
+  color: rgb(230, 230, 230);
+}
