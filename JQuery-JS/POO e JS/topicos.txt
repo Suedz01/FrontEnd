@@ -1,0 +1,2 @@
+-- criar funções externas e chamá-las dentro do arquivo index.js
+-- definição de classes

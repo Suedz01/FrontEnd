@@ -1,0 +1,16 @@
+{
+  "name": "aula_js",
+  "version": "1.0.0",
+  "description": "Primeira aula de node.js e JavaScript",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cayo Oliveira",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "node-fetch": "^3.2.10"
+  }
+}
