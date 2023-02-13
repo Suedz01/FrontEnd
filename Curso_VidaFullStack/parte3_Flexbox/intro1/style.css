@@ -1,0 +1,24 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  /* Pode deixar elementos na mesma linha */
+  display: flex;
+  /* Define a direção do flex */
+  flex-direction: column;
+  /* Flex normalmente força a tudo ficar na mesma linha,
+  no entanto, com wrap você pode mudar isso */
+  flex-wrap: wrap;
+  /* justify-content é para horizontal - você pode usar flex-start ou flex-end */
+    /* space-around é autoexplicativo */
+  /* align-items é para vertical - você pode usar flex-start ou flex-end */
+
+}
+.child{
+  background:aqua;
+  border: 1px solid black;
+  width:50%;
+  height:100%;
+}

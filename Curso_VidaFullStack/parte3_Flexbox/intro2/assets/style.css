@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:62.5%;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  background-color:#fbd1d9;
+}
+
+.flex {  
+  /* Flexbox sempre ajusta as organizações para seus filhos */
+  padding: 5px;
+  /* Setar os valores mínimos do container */
+  min-width: 800px;
+  min-height: 675px;
+
+  /* Imagem central */
+  background: url('./image.png') no-repeat center;
+  background-color:#FFF;
+  border: 10px solid #ff264e;
+}
+
+.child { 
+  box-sizing: border-box;
+  border: 1px solid #FFF;
+
+  width: 100px;
+  background: #ff264e;  
+  
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 2.5rem; 
+  color:#FFF;
+}
