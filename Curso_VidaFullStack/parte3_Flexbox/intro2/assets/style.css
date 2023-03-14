@@ -31,15 +31,20 @@ body {
   background: url('./image.png') no-repeat center;
   background-color:#FFF;
   border: 10px solid #ff264e;
+
+  /* align boxes */
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .child { 
-  box-sizing: border-box;
   border: 1px solid #FFF;
 
   width: 100px;
   background: #ff264e;  
   
+  /* Align text */
   display:flex;
   justify-content: center;
   align-items: center;
